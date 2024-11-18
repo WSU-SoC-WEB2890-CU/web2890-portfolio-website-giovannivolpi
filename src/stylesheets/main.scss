@@ -9,6 +9,14 @@ $shape_color: #226FC7;
 
 /*OVERALL BODY OF WEBSITE*/
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+img{
+  width: 35%;
+}
+
 body{
     background-color: $primary_color;
 }
@@ -19,7 +27,7 @@ body{
 
 .Title1{
     text-align: center;
-    padding: 150px;
+    padding: 70px;
 }
 
 .section1{
@@ -28,10 +36,29 @@ body{
     border-radius: 8px;
 }
 
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-align: center;
+  background: #3A5678;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: $text_color;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #3A5678, #164780);
+  color: $text_color;
+}
+
 
 
 
 /* ABOUT ME  */
+
   .history {
     display: flex;
     justify-content: center;
@@ -46,7 +73,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    height: 100vh;
+    height: 90vh;
   }
 
   .vertical-line {
@@ -96,7 +123,7 @@ body{
 
   .More-Proj {
     background-color: $section_color;
-    padding: 50px;
+    padding: 100px;
   }
 
     /* CASE STUDY  */
@@ -154,6 +181,13 @@ body{
     width: 100%;
     text-align: center;
   }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+  }
 }
 
 
@@ -185,4 +219,12 @@ body{
   .navbar-toggler {
     margin-right: 0;
   }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; 
+      height: auto;
+    }
+
 }
