@@ -2,12 +2,19 @@
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+$primary_color: #122952;
+$section_color: #2F6A95;
+$text_color: white;
+$shape_color: #226FC7;
+
+/*OVERALL BODY OF WEBSITE*/
+
 body{
-    background-color: #122952;
+    background-color: $primary_color;
 }
 
 body{
-    color: white;
+    color: $text_color;
 }
 
 .Title1{
@@ -16,10 +23,13 @@ body{
 }
 
 .section1{
-    background-color: #2F6A95;
+    background-color: $section_color;
     padding: 50px;
     border-radius: 8px;
 }
+
+
+
 
 /* ABOUT ME  */
   .history {
@@ -60,15 +70,12 @@ body{
   .circle {
     width: 50px;
     height: 50px;
-    background-color: #226FC7;
+    background-color: $shape_color;
     border: 2px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
     position: absolute; 
     left: 50%; 
     transform: translateX(-50%); 
@@ -88,7 +95,7 @@ body{
   }
 
   .More-Proj {
-    background-color: #2A588C;
+    background-color: $section_color;
     padding: 50px;
   }
 
@@ -106,7 +113,76 @@ body{
     
     .box {
       width: 48%;
-      background-color: #2A588C;
+      background-color: $section_color;
       border-radius: 8px;
       padding: 20px;
     }
+
+
+
+/* TABLET VERSION  */
+
+@media (max-width: 768px) {
+  .navbar .container-fluid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+
+  .Title1 h1 {
+    font-size: 2rem;
+  }
+
+
+  .section1 p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+/*MOBILE VERSION*/
+
+@media (max-width: 480px) {
+  .Title1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .section1 p {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .navbar .container-fluid {
+    padding: 0 10px;
+  }
+
+  .navbar-toggler {
+    margin-right: 0;
+  }
+}
