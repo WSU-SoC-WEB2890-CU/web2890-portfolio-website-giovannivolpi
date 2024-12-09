@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Netlify link: https://volpiportfolio.netlify.app -->
 
 <head>
   <meta charset="utf-8">
@@ -13,15 +14,102 @@
 
 <body>
   <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
+  <header>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Giovanni Volpi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./case-study.html">Case Study</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                My Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./project1.html">Project 1</a></li>
+                <li><a class="dropdown-item" href="./project2.html">Project 2</a></li>
+                <li><a class="dropdown-item" href="./project3.html ">Project 3</a></li>
+                <li><a class="dropdown-item" href="./project4.html">Project 4</a></li>
+                <li><a class="dropdown-item" href="./project5.html">Project 5</a></li>
+                <li><a class="dropdown-item" href="./project6.html">Project 6</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- MAIN TITLE-->
+    <div class="Title1">
+      <h1 class="p-4">Ciao, I am Giovanni!</h1>
+      <img src="./Images/gio2.jpg" alt="Portrait of Giovanni Volpi">  
+    </div>
+  </header>
+
+  <main>
+    <!-- BRIEF SECTION ABOUT ME -->
+     <div class="container text-center section1">
+      <p>
+        UI/UX designer, and researcher, and a ambitious Web Developer. I am based out of Lugano, Switzerland, designing responsive websites while finishing my undergraduate degree. Thank you fpr taking a look at my portfolio, there is a lot to see! To begin, learn more about me here:
+      </p>
+
+      <a class="button" href="./About.html">About Me</a>
+
+     </div>  
+
+     <div class="container text-center p-5">
+        <h2 class="p-5">My Case Study</h2>
+        <img style="width: 80%;" src="./Images/case1.png" alt="freelance website"> 
+
+        
+        <h3 class="p-5">First Freelance Work!</h3>
+        <div class="section1">
+          <p>
+            This is my first project as a UI/UX freelancer. I am building a website for a professional paraglider in Switzerland! This has been quite a challenge for me, as I go over my comfort zone to make this happen. Check more about my case study here:
+          </p>
+          <a class="button" href="./case-study.html">Case Study</a>
+        </div>
+
+     </div>
+
+             <!-- FOOTER --> 
+
+             <footer class="bg-dark text-white py-4">
+              <div class="container text-center">
+                <p class="h5 mb-3">Giovanni Volpi</p>
+                <nav>
+                  <ul class="list-unstyled d-inline-flex mb-3">
+                    <li class="mx-3">
+                      <a href="./About.html" class="text-white text-decoration-none">About Me</a>
+                    </li>
+                    <li class="mx-3">
+                      <a href="./Contact.html" class="text-white text-decoration-none">Contact Me</a>
+                    </li>
+                    <li class="mx-3">
+                      <a href="./Contact.html" class="text-white text-decoration-none">Case Study</a>
+                    </li>
+                  </ul>
+                </nav>
+                <p>&copy; 2024 Giovanni Volpi. All rights reserved.</p>
+              </div>
+            </footer>
     
-    Portfolio Website
-  </h1>
+  
+
+
+  </main>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
